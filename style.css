@@ -1,0 +1,44 @@
+.cell{
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+    font-size: 4rem;
+    text-align: center;
+}
+#mainContainer{
+    padding: 20px;
+    text-align: center;
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 3rem;
+    text-decoration:  underline dotted;
+}
+#cells{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 252px;
+    border: 2px solid;
+    margin: auto;
+}
+h2{
+    font-size: 1.8rem;
+}
+button{
+    font-family: monospace,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+button:hover{
+    background-color: rgb(100, 98, 98);
+    transition: 0.7s;
+    color: aliceblue;
+}
+button:active{
+    transition: 0s;
+    background-color:aliceblue;
+    color: black;
+}
