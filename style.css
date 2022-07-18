@@ -9,7 +9,12 @@
     background-color: rgb(19, 18, 18);
 }
 #mainContainer{
-    padding: 10px 20px 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px 0px 20px;
+    height: 95vh;
     text-align: center;
     font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -29,8 +34,10 @@ h2{
     font-size: 3rem;
 }
 button{
+    width: 100px;
     font-family: monospace,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 50px;
+    margin-bottom: 15px;
     font-size: 1.5rem;
     padding: 5px 10px;
     border-radius: 5px;
@@ -45,4 +52,7 @@ button:active{
     transition: 0s;
     background-color:aliceblue;
     color: black;
+}
+footer{
+    justify-self: end;
 }
