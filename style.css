@@ -1,33 +1,36 @@
 .cell{
-    height: 80px;
-    width: 80px;
-    border: 2px solid;
-    font-size: 4rem;
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+    color: azure;
+    font-size: 8rem;
     text-align: center;
     cursor: pointer;
+    background-color: rgb(19, 18, 18);
 }
 #mainContainer{
-    padding: 20px;
+    padding: 10px 20px 30px 20px;
     text-align: center;
     font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1{
-    font-size: 3rem;
+    font-size: 4rem;
     text-decoration:  underline dotted;
 }
 #cells{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 252px;
-    border: 2px solid;
+    width: 462px;
+    border: 1px solid white;
     margin: auto;
 }
 h2{
-    font-size: 1.8rem;
+    margin: 30px;
+    font-size: 3rem;
 }
 button{
     font-family: monospace,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 1.5rem;
     padding: 5px 10px;
     border-radius: 5px;

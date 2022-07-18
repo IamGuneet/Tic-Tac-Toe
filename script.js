@@ -36,6 +36,7 @@ function onClick() {
         console.log("running");
         updateCell(this, cellNum);
         checkWinner();
+        
     }
 
 }
@@ -46,18 +47,38 @@ function updateCell(cell, index) {
     changePlayer();
 }
 function changePlayer() {
-    if(currentPlayer == "X"){
-        currentPlayer="O";
-        text.textContent = `${currentPlayer}'s turn`;
-    }else if(currentPlayer == "O"){
-        currentPlayer="X";
-        text.textContent = `${currentPlayer}'s turn`;
-    }
-
-}
-function checkWinner() {
+    // if(currentPlayer == "X"){
+    //     currentPlayer="O";
+    // }else{
+    //     currentPlayer="X";
+    // }
+    // text.textContent = `${currentPlayer}'s turn`;
+    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    text.textContent = `${currentPlayer}'s turn`;
     
 }
+function checkWinner() {
+    let winner = false;
+    for(let i = 0; i< winConditions.length;i++){
+        const cond = winConditions[i];
+        const cell1 = gameMoves[cond[0]];
+        const cell2 = gameMoves[cond[1]];
+        const cell3 = gameMoves[cond[2]];
+        if(cell1 ==""||cell2==""||cell3==""){
+            continue;
+        }
+        if(cell1== cell2 && cell2==cell3){
+            winner=true;            
+            text.textContent = `${currentPlayer} lost!`;
+            break;
+          }else if(!gameMoves.includes("")) {
+              text.textContent = `Draw`;
+            }
+            
+        }
+        
+    }
+
 
 function resetGame() {
     text.textContent = `-`;
