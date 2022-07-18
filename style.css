@@ -4,6 +4,7 @@
     border: 2px solid;
     font-size: 4rem;
     text-align: center;
+    cursor: pointer;
 }
 #mainContainer{
     padding: 20px;
